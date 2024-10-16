@@ -31,7 +31,7 @@
 </head>
 <?php  session_start();
         include('../admin/connect.php');?>
-
+<h1>Danh pro maxs</h1>
 <p>Danh pro</p>
 
 <body class="dashboard" data-aos-easing="ease-out-quart" data-aos-duration="500" data-aos-delay="0">
