@@ -1,0 +1,44 @@
+@media (max-width: 575.98px)
+{
+    .nav .nav-item .nav-notification {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1199.98px)
+{
+    .navbar-expand-xl .navbar-toggler {
+        border: none;
+    }
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+.navbar-toggler .navbar-toggler-animation span
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    height: 2px;
+    background: var(--bs-navbar-color);
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-radius: 30px;
+    &:nth-child(1) {
+    top: 10%;
+    }
+    &:nth-child(2) {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+        bottom: 10%;
+    }
+}

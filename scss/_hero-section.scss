@@ -1,0 +1,106 @@
+.opacity-7 {
+    opacity: 0.7 !important;
+}
+
+.fill{
+    &-primary {
+        fill: #5143d9 !important;
+    }
+    &-warning {
+        fill: #f7c32e !important;
+    }
+}
+.gap-4 {
+    gap: 1.5rem !important;
+}
+
+.btn {
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    outline: 0;
+    margin-bottom: 6px;
+    &-primary-soft {
+        color: #5143d9;
+        background-color: rgba(81, 67, 217, 0.1);
+        &:active, &:hover, &:focus {
+            color: #fff;
+            background-color: #5143d9;
+            border-color: #5143d9;
+        }
+    }
+    &-round{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        padding: 0;
+        text-align: center;
+        &.btn-xs {
+            height: 25px;
+            width: 25px;
+            line-height: 24px;
+        }
+    }
+    &-white {
+        background: #fff;
+        color: #0b0a12;
+        &.active, &:active, &:focus, &:hover {
+            background: #dfdfe3;
+            color: #0b0a12;
+            border-color: #dfdfe3;
+        }
+        
+    }
+    &-xs {
+        font-size: 0.6rem;
+    }
+}
+.fw{
+    &-normal {
+        font-weight: 500 !important;
+    }
+    &-light {
+        font-weight: 400 !important;
+    }
+}
+.bg-blur {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.icon{
+    &-lg {
+        width: 3.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+        &-xl {
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            font-size: 1.9rem;
+        }
+}
+.border-3 {
+    border-width: 3px !important;
+}
+.btn-position-md-middle {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 767.98px)
+{
+.btn-position-md-middle {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+}
